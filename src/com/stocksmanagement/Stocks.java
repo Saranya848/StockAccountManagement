@@ -46,9 +46,12 @@ public class Stocks {
 		this.sharePrice = sharePrice;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public String toString() {
+		return "Stock [StockNames = " + stockNames + ", StockNumber = " + numOfShare + ", StockPrice = " + sharePrice + "]";
+	}
 
+	public int getValue() {
+		return (int) (numOfShare * sharePrice);
 	}
 
 }
